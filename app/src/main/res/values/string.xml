@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">shoe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_the_details_and_get_the_list_of_your_shoes_at_one_place">Add The details and get the list of your Shoes at one place</string>
+    <string name="welcome_sentence">Welcome Boss! I hope you are going to have a great time with us. So happy to have you among us.</string>
+    <string name="instructions_sentence">Add new shoe to your List</string>
+</resources>
