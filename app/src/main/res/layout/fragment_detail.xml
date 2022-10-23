@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--detail fragment => the layout of adding a new Shoe -->
+
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
         <variable
-            name="ShoViewModel"
+            name="viewModel"
             type="com.example.shoe.viewmodel.AppViewModel" />
     </data>
     <LinearLayout
@@ -22,48 +25,59 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  shoeName" />
+            android:text="  ShoeName" />
 
         <EditText
             android:id="@+id/nameBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@={viewModel.myShoe.name}"
+            >
 
         </EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  shoeCompany" />
+            android:text="  ShoeCompany" />
 
         <EditText
             android:id="@+id/companyBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.myShoe.company}"
+            >
 
         </EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  shoeSize" />
+            android:text="  ShoeSize" />
 
         <EditText
             android:id="@+id/sizeBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@={``+viewModel.myShoe.size}"
+            >
 
         </EditText>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  shoeDescription" />
+            android:text="  ShoeDescription"
+
+            />
 
         <EditText
             android:id="@+id/descriptionBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:text="@={viewModel.myShoe.description}"
+
+            >
         </EditText>
         <LinearLayout
             android:layout_width="match_parent"

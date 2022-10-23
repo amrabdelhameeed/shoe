@@ -1,3 +1,3 @@
 package com.example.shoe.model
-class Shoe(var name: String?=null, var size: Double?=null, var company: String?=null, var description: String?=null,
+data class Shoe(var name: String="", var size: Double=0.0, var company: String="", var description: String="",
            val images: List<String> = mutableListOf())

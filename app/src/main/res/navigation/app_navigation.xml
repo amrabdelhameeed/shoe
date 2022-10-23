@@ -27,18 +27,18 @@
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"
             app:popUpTo="@id/listingFragment">
-            <argument
-                android:name="name"
-                android:defaultValue='""' />
-            <argument
-                android:name="size"
-                android:defaultValue='""' />
-            <argument
-                android:name="company"
-                android:defaultValue='""' />
-            <argument
-                android:name="description"
-                android:defaultValue='""' />
+<!--            <argument-->
+<!--                android:name="name"-->
+<!--                android:defaultValue='""' />-->
+<!--            <argument-->
+<!--                android:name="size"-->
+<!--                android:defaultValue='""' />-->
+<!--            <argument-->
+<!--                android:name="company"-->
+<!--                android:defaultValue='""' />-->
+<!--            <argument-->
+<!--                android:name="description"-->
+<!--                android:defaultValue='""' />-->
         </action>
     </fragment>
     <fragment

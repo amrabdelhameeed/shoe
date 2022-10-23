@@ -9,16 +9,23 @@ class AppViewModel:ViewModel() {
     fun shoesGetter (): LiveData<MutableList<Shoe>?> {
         return shoes
     }
-//    var myShoe :Shoe= Shoe(
-//    )
+    var myShoe :Shoe= Shoe(
+        "",
+        0.0,"",""
+    )
     fun initialize(){
     shoes.value = ArrayList()
 }
-    fun createNewShoe (shoe: Shoe){
-        shoes.value?.add(shoe)
+    fun createNewShoe (){
+    shoes.value?.add(myShoe)
     shoes.value = shoes.value
-}
-//    fun deleteShoeOnCancel (){
-//        myShoe = Shoe()
-//    }
+    }
+
+    fun deleteShoeOnCancel (){
+        myShoe  = Shoe(
+            "",
+            0.0,"",""
+        )
+        shoes.value = shoes.value
+    }
 }
